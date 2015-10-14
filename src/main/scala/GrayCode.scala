@@ -12,14 +12,16 @@ Example output:
 
 Gray code:
 https://en.wikipedia.org/wiki/Gray_code
- */
+*/
 
 object GrayCode extends App {
 
+  // solution
   def grays(n: Int) =
     (1 until n).foldLeft(List(List(0), List(1))) { (previous, _) =>
       previous.map(0 :: _) ::: previous.reverse.map(1 :: _)
     }
 
+  // test
   grays(3).map(_.mkString).foreach(println)
 }
