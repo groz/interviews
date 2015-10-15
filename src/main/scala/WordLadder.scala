@@ -11,7 +11,6 @@ object WordLadder extends App {
 
   def ladder(dictionary: Set[String], start: String, end: String): Set[List[String]] =
     if (start == end) Set(List.empty)
-    else if (dictionary.isEmpty) Set.empty
     else for {
       next <- dictionary if dist(start, next) == 1
       rest <- ladder(dictionary - next, next, end)
@@ -19,7 +18,7 @@ object WordLadder extends App {
 
   // test
   println(
-    ladder(Set("hot" ,"dot" ,"dog" ,"lot" ,"log", "cog"), "hit", "cog").minBy(_.size)
+    ladder(Set("hot", "dot", "dog", "lot", "log", "cog"), "hit", "cog").minBy(_.size)
   )
 
   println(
