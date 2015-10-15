@@ -9,7 +9,7 @@ Output:
 true
 */
 
-object SplitByDictionary extends App {
+object WordBreak extends App {
 
   val dictionary = List("hello", "hell", "o", "world")
 
