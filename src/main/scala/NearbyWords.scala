@@ -1,6 +1,5 @@
 /*
-Given functions that returns nearby char and checks if the string is a word
-write a function returns all nearby words for a string.
+Find all nearby words for a given one.
 */
 
 object NearbyWords extends App {
@@ -11,11 +10,11 @@ object NearbyWords extends App {
 
   // solution
   def nearby(input: String, maxDiff: Int): Set[String] =
-    input.foldLeft(Set("")) { (stringsSoFar, char) =>
+    input.foldLeft(Set("")) { (acc, char) =>
       for {
+        s <- acc
         c <- nearbyChars(char)
-        str <- stringsSoFar
-        next = str + c
+        next = s + c
         if next.zip(input).count(p => p._1 != p._2) <= maxDiff
       } yield next
     } filter isWord
