@@ -22,7 +22,7 @@ object RegexMatching extends App {
     case (c :: chars, '.' :: pattern) => isMatch(chars, pattern)
     case (c :: chars, p :: pattern) => c == p && isMatch(chars, pattern)
   }
-  
+
   def isMatch(s: String, p: String): Boolean = isMatch(s.toList, p.toList)
 
   // tests
