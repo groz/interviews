@@ -64,22 +64,22 @@ object ValidSearchTree extends App {
     }._1
 
   // test
-  val a = Tree(2,
+  val exampleA = Tree(2,
     Some(Tree(2, Some(Tree(1, None, None)), None)),
     Some(Tree(2, None, Some(Tree(3, None, None))))
   )
 
-  val b = Tree(1,
+  val exampleB = Tree(1,
     Some(Tree(2, None, None)),
     Some(Tree(3, None, None))
   )
 
-  val c = Tree(3,
+  val exampleC = Tree(3,
     Some(Tree(2, Some(Tree(0, None, None)), Some(Tree(4, None, None)))),
     Some(Tree(5, None, None))
   )
 
-  println(isValid(a)) // true
-  println(isValid(b)) // false
-  println(isValid(c)) // false
+  println(isValid(exampleA)) // true
+  println(isValid(exampleB)) // false
+  println(isValid(exampleC)) // false
 }
