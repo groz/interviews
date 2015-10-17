@@ -1,4 +1,4 @@
-/**********************
+/** ********************
 Write a function to check that a binary tree is a valid binary search tree.
 That means for any node n
   - All nodes to the left of n have values less than or equal to n
@@ -30,7 +30,7 @@ Not valid
 
 Function should take the root of the tree as input.
 Should return a boolean: true if a valid BST, false if not valid.
-**********************/
+  * *********************/
 
 object ValidSearchTree extends App {
 
@@ -40,24 +40,27 @@ object ValidSearchTree extends App {
   def foldInorder[A, B](tree: Tree[A], b: B)(f: (B, A) => B): B =
     tree match {
       case Tree(a, None, None) => f(b, a)
+
       case Tree(a, Some(left), Some(right)) =>
         val l = foldInorder(left, b)(f)
         val current = f(l, a)
         foldInorder(right, current)(f)
+
       case Tree(a, Some(left), None) =>
         val l = foldInorder(left, b)(f)
         f(l, a)
+
       case Tree(a, None, Some(right)) =>
         val current = f(b, a)
         foldInorder(right, current)(f)
     }
 
   // note: folding could be altered to stop when we know the result is false
-  
+
   def isValid(tree: Tree[Int]): Boolean =
-    foldInorder(tree, (true, Int.MinValue)) { (acc, v) =>
-      val (valid, previous) = acc
-      (valid && previous <= v, v)
+    foldInorder(tree, (true, Int.MinValue)) { (acc, value) =>
+      val (isValid, previousValue) = acc
+      (isValid && previousValue <= value, value)
     }._1
 
   // test
