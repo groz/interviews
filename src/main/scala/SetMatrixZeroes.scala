@@ -19,12 +19,12 @@ object SetMatrixZeroes extends App {
     }
 
     // zero marked rows/cols
-    for (i <- 0 until nRows) {
+    for (i <- 1 until nRows) {
       if (arr(i)(0) == 0)
         for (j <- 1 until nCols) arr(i)(j) = 0
     }
 
-    for (j <- 0 until nCols) {
+    for (j <- 1 until nCols) {
       if (arr(0)(j) == 0)
         for (i <- 1 until nRows) arr(i)(j) = 0
     }
@@ -35,7 +35,7 @@ object SetMatrixZeroes extends App {
     Array(1, 1, 1, 1),
     Array(1, 1, 1, 0),
     Array(1, 1, 0, 0),
-    Array(1, 0, 0, 0)
+    Array(1, 1, 0, 0)
   )
 
   zero(input)
