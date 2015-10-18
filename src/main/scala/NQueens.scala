@@ -1,5 +1,3 @@
-import scala.collection.immutable.IndexedSeq
-
 /*
 Arrange N chess queens on the N-by-N board so that no 2 queens threaten each other.
 */
