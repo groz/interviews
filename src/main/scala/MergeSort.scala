@@ -4,7 +4,6 @@ Implement mergesort.
 
 object MergeSort extends App {
 
-  // solution
   def merge[A](as: List[A], bs: List[A])(implicit ordering: Ordering[A]): List[A] =
     (as, bs) match {
       case (Nil, Nil) => Nil

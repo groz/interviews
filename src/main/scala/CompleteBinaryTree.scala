@@ -8,7 +8,6 @@ object CompleteBinaryTree extends App {
 
   val branchFactor = 2
 
-  // solution
   case class Tree(children: Seq[Tree])
 
   def nextLevel(nodes: Seq[Tree]) = nodes.flatMap(_.children)
@@ -29,9 +28,9 @@ object CompleteBinaryTree extends App {
 
   // test
   val leaf = Tree(Seq.empty)
-  val complete = Tree( Seq(leaf, leaf) )
+  val complete = Tree(Seq(leaf, leaf))
 
-  val noncomplete = Tree( Seq(
+  val noncomplete = Tree(Seq(
     Tree(Seq(Tree(Seq(leaf)), leaf)),
     leaf
   ))

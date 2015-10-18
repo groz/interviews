@@ -6,7 +6,6 @@ Given two words (start and end) and a dictionary, find the shortest transformati
 
 object WordLadder extends App {
 
-  // solution
   def dist(a: String, b: String) = a.zip(b).count(p => p._1 != p._2) + Math.abs(b.size - a.size)
 
   def ladder(dictionary: Set[String], start: String, end: String): Set[List[String]] =

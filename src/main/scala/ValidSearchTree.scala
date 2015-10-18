@@ -34,7 +34,6 @@ Should return a boolean: true if a valid BST, false if not valid.
 
 object ValidSearchTree extends App {
 
-  // solution
   case class Tree[A](value: A, left: Option[Tree[A]], right: Option[Tree[A]])
 
   def foldInorder[A, B](tree: Tree[A], b: B)(f: (B, A) => B): B =

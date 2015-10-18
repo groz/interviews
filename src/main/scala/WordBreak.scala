@@ -13,7 +13,6 @@ object WordBreak extends App {
 
   val dictionary = List("hello", "hell", "o", "world")
 
-  // solution
   def chain(input: String): List[List[String]] =
     if (input.isEmpty) List(List.empty[String])
     else for {

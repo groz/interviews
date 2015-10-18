@@ -6,7 +6,6 @@ Add the two numbers and return it as a linked list.
 
 object LongAddition extends App {
 
-  // solution
   def add(as: List[Int], bs: List[Int], memory: Int): List[Int] =
     (as, bs) match {
       case (Nil, _) =>

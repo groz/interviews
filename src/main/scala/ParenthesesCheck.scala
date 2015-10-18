@@ -4,7 +4,6 @@ Check if a given string contains correct parentheses
 
 object ParenthesesCheck extends App {
 
-  // solution
   def check(cs: List[Char], n: Int): Boolean =
     if (n < 0) false
     else cs match {

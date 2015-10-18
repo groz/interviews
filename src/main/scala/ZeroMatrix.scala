@@ -2,7 +2,7 @@
 Given a matrix substitute if an element is equal to zero overwrite the whole row and column with zeroes (in place).
 */
 
-object SetMatrixZeroes extends App {
+object ZeroMatrix extends App {
 
   def zero(arr: Array[Array[Int]]) = {
     val nRows = arr.size

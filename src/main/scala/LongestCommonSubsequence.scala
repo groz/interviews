@@ -11,7 +11,6 @@ AFT
 
 object LongestCommonSubsequence extends App {
 
-  // solution
   def lcs(as: List[Char], bs: List[Char], acc: List[Char]): List[Char] =
     (as, bs) match {
       case (Nil, _) => acc

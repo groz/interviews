@@ -6,6 +6,7 @@ object NearbyWords extends App {
 
   // placeholder implementations
   def nearbyChars(c: Char): Set[Char] = Set[Char](c, (c + 1).toChar, (c + 2).toChar)
+
   def isWord(w: String) = true
 
   // solution

@@ -10,7 +10,6 @@ The matching should cover the entire input string.
 
 object RegexMatching extends App {
 
-  // solution
   def isMatch(cs: List[Char], ps: List[Char]): Boolean = (cs, ps) match {
     case (Nil, Nil) => true
     case (_, Nil) => false

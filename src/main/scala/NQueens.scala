@@ -4,7 +4,6 @@ Arrange N chess queens on the N-by-N board so that no 2 queens threaten each oth
 
 object NQueens extends App {
 
-  // solution
   val n = 8
 
   type Cell = (Int, Int)

@@ -9,7 +9,6 @@ return [1,6],[8,10],[15,18].
 
 object MergeIntervals extends App {
 
-  // solution
   type Interval = (Int, Int)
 
   def mergeIntervals(intervals: Seq[Interval]): Seq[Interval] = {

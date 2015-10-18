@@ -4,7 +4,6 @@ Find all a, b, c, d < N such as a^3 + b^3 == c^3 + d^3
 
 object SumCubes extends App {
 
-  // solution
   def cubes(n: Int) = {
     val pairs = for {
       a <- 1 until n
