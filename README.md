@@ -38,4 +38,5 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Zero matrix](src/main/scala/ZeroMatrix.scala)
 - [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
 - [Sum cubes](src/main/scala/SumCubes.scala)
-
+- [Lisp-like interpreter](src/main/scala/LispLikeInterpreter.scala)
+- [Catalan numbers](src/main/scala/CatalanNumbers.scala)
