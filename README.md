@@ -19,6 +19,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Simple regex matching](src/main/scala/RegexMatching.scala)
 - [Word break](src/main/scala/WordBreak.scala)
 - [Word ladder](src/main/scala/WordLadder.scala)
+- [String compression](src/main/scala/StringCompression.scala)
 
 ## Trees
 
