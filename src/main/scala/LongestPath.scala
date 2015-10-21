@@ -16,18 +16,14 @@ Output:
 object LongestPath extends App {
 
   def findPath(workflow: Map[Int, Int], src: Int): List[Int] =
-    workflow.get(src).fold(List.empty[Int]) { dst =>
-      dst :: findPath(workflow - src, dst)
-    }
+    src ::
+      workflow
+      .get(src)
+      .map(dst => findPath(workflow - src, dst))
+      .getOrElse(Nil)
 
-  def findLongest(workflow: Map[Int, Int]) = {
-    val all = for {
-      (src, _) <- workflow
-      path = src :: findPath(workflow, src)
-    } yield path
-
-    all.maxBy(_.size)
-  }
+  def findLongest(workflow: Map[Int, Int]) =
+    workflow.keys.map(src => findPath(workflow, src)).maxBy(_.size)
 
   val path = findLongest(Map(
     1 -> 2,
