@@ -4,65 +4,27 @@ Implement different traversals of a tree
 
 object BinaryTreeTraversals extends App {
 
-  case class Tree[A](value: A, left: Option[Tree[A]], right: Option[Tree[A]])
+  case class Tree[A](value: A, left: Option[Tree[A]], right: Option[Tree[A]]) {
 
-  def preorderFold[A, B](tree: Tree[A], b: B)(f: (B, A) => B): B =
-    tree match {
-      case Tree(a, None, None) =>
-        f(b, a)
-
-      case Tree(a, None, Some(right)) =>
-        val current = f(b, a)
-        preorderFold(right, current)(f)
-
-      case Tree(a, Some(left), None) =>
-        val current = f(b, a)
-        preorderFold(left, current)(f)
-
-      case Tree(a, Some(left), Some(right)) =>
-        val current = f(b, a)
-        val leftResult = preorderFold(left, current)(f)
-        preorderFold(right, leftResult)(f)
+    def foldInorder[B](b: B)(f: (B, A) => B): B = {
+      val l = left.fold(b) { _.foldInorder(b)(f) }
+      val current = f(l, value)
+      right.fold(current) { _.foldInorder(current)(f) }
     }
 
-  def postorderFold[A, B](tree: Tree[A], b: B)(f: (B, A) => B): B =
-    tree match {
-      case Tree(a, None, None) =>
-        f(b, a)
-
-      case Tree(a, None, Some(right)) =>
-        val rightResult = postorderFold(right, b)(f)
-        f(rightResult, a)
-
-      case Tree(a, Some(left), None) =>
-        val leftResult = postorderFold(left, b)(f)
-        f(leftResult, a)
-
-      case Tree(a, Some(left), Some(right)) =>
-        val leftResult = postorderFold(left, b)(f)
-        val rightResult = postorderFold(right, leftResult)(f)
-        f(rightResult, a)
+    def foldPreorder[B](b: B)(f: (B, A) => B): B = {
+      val current = f(b, value)
+      val l = left.fold(current) { _.foldInorder(current)(f) }
+      right.fold(l) { _.foldInorder(l)(f) }
     }
 
-  def inorderFold[A, B](tree: Tree[A], b: B)(f: (B, A) => B): B =
-    tree match {
-      case Tree(a, None, None) =>
-        f(b, a)
-
-      case Tree(a, None, Some(right)) =>
-        val current = f(b, a)
-        inorderFold(right, current)(f)
-
-      case Tree(a, Some(left), None) =>
-        val leftResult = inorderFold(left, b)(f)
-        f(leftResult, a)
-
-      case Tree(a, Some(left), Some(right)) =>
-        val leftResult = inorderFold(left, b)(f)
-        val current = f(leftResult, a)
-        inorderFold(right, current)(f)
+    def foldPostorder[B](b: B)(f: (B, A) => B): B = {
+      val l = left.fold(b) { _.foldInorder(b)(f) }
+      val r = right.fold(l) { _.foldInorder(l)(f) }
+      f(r, value)
     }
 
+  }
   // test
 
   val tree = Tree(
@@ -79,12 +41,8 @@ object BinaryTreeTraversals extends App {
     ))
   )
 
-  val preorderResult = preorderFold(tree, "")(_ + " -> " + _)
-  println(preorderResult)
+  println(tree.foldPreorder("")(_ + " -> " + _))
+  println(tree.foldPostorder("")(_ + " -> " + _))
+  println(tree.foldInorder("")(_ + " -> " + _))
 
-  val postorderResult = postorderFold(tree, "")(_ + " -> " + _)
-  println(postorderResult)
-
-  val inorderResult = inorderFold(tree, "")(_ + " -> " + _)
-  println(inorderResult)
 }

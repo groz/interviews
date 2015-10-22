@@ -34,30 +34,19 @@ Should return a boolean: true if a valid BST, false if not valid.
 
 object ValidSearchTree extends App {
 
-  case class Tree[A](value: A, left: Option[Tree[A]], right: Option[Tree[A]])
+  case class Tree[A](value: A, left: Option[Tree[A]], right: Option[Tree[A]]) {
 
-  def foldInorder[A, B](tree: Tree[A], b: B)(f: (B, A) => B): B =
-    tree match {
-      case Tree(a, None, None) => f(b, a)
-
-      case Tree(a, Some(left), Some(right)) =>
-        val l = foldInorder(left, b)(f)
-        val current = f(l, a)
-        foldInorder(right, current)(f)
-
-      case Tree(a, Some(left), None) =>
-        val l = foldInorder(left, b)(f)
-        f(l, a)
-
-      case Tree(a, None, Some(right)) =>
-        val current = f(b, a)
-        foldInorder(right, current)(f)
+    def foldInorder[B](b: B)(f: (B, A) => B): B = {
+      val l = left.fold(b) { _.foldInorder(b)(f) }
+      val current = f(l, value)
+      right.fold(current) { _.foldInorder(current)(f) }
     }
+  }
 
   // note: folding could be altered to stop when we know the result is false
 
   def isValid(tree: Tree[Int]): Boolean =
-    foldInorder(tree, (true, Int.MinValue)) { (acc, value) =>
+    tree.foldInorder(true, Int.MinValue) { (acc, value) =>
       val (isValid, previousValue) = acc
       (isValid && previousValue <= value, value)
     }._1
