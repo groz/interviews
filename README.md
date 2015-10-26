@@ -29,17 +29,21 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Prefix search](src/main/scala/PrefixSearch.scala)
 - [Check validity of BST](src/main/scala/ValidSearchTree.scala)
 
+## Arrays/Lists
+
+- [Maximum product of subarray](src/main/scala/MaxProduct.scala)
+- [Pick random k elements](src/main/scala/PickRandom.scala)
+- [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
+- [Merge sort](src/main/scala/MergeSort.scala)
+
 ## Other
 
 - [Long addition](src/main/scala/LongAddition.scala)
 - [Merge intervals](src/main/scala/MergeIntervals.scala)
-- [Merge sort](src/main/scala/MergeSort.scala)
 - [n-queens](src/main/scala/NQueens.scala)
 - [Parentheses check](src/main/scala/ParenthesesCheck.scala)
 - [Zero matrix](src/main/scala/ZeroMatrix.scala)
-- [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
 - [Sum cubes](src/main/scala/SumCubes.scala)
 - [Lisp-like interpreter](src/main/scala/LispLikeInterpreter.scala)
 - [Catalan numbers](src/main/scala/CatalanNumbers.scala)
 - [Longest path](src/main/scala/LongestPath.scala)
-- [Maximum product of subarray](src/main/scala/MaxProduct.scala)
