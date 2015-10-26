@@ -35,6 +35,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Pick random k elements](src/main/scala/PickRandom.scala)
 - [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
 - [Merge sort](src/main/scala/MergeSort.scala)
+- [Find 2 elements that add to given sum](src/main/scala/TwoSum.scala)
 
 ## Other
 
