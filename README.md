@@ -21,13 +21,14 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Word ladder](src/main/scala/WordLadder.scala)
 - [String compression](src/main/scala/StringCompression.scala)
 
-## Trees
+## Trees/Graphs
 
 - [Binary tree traversals](src/main/scala/BinaryTreeTraversals.scala)
 - [Complete binary tree](src/main/scala/CompleteBinaryTree.scala)
 - [Path sum](src/main/scala/PathSum.scala)
 - [Prefix search](src/main/scala/PrefixSearch.scala)
 - [Check validity of BST](src/main/scala/ValidSearchTree.scala)
+- [Shortest path in Graph][src/main/scala/ShortestPathInGraph.scala]
 
 ## Arrays/Lists
 
@@ -36,6 +37,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
 - [Merge sort](src/main/scala/MergeSort.scala)
 - [Find 2 elements that add to given sum](src/main/scala/TwoSum.scala)
+- [Max subarray sum](src/main/scala/MaxSubarray.scala)
 
 ## Other
 
