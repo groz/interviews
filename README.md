@@ -28,7 +28,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Path sum](src/main/scala/PathSum.scala)
 - [Prefix search](src/main/scala/PrefixSearch.scala)
 - [Check validity of BST](src/main/scala/ValidSearchTree.scala)
-- [Shortest path in Graph][src/main/scala/ShortestPathInGraph.scala]
+- [Shortest path in Graph](src/main/scala/ShortestPathInGraph.scala)
 
 ## Arrays/Lists
 
