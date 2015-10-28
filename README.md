@@ -42,7 +42,7 @@ Scala is a great language to solve interview problems for software engineer posi
 
 ## Other
 
-- [Long addition](src/main/scala/LongAddition.scala)
+- [Long arithmetic](src/main/scala/LongArithmetic.scala)
 - [Merge intervals](src/main/scala/MergeIntervals.scala)
 - [n-queens](src/main/scala/NQueens.scala)
 - [Parentheses check](src/main/scala/ParenthesesCheck.scala)
