@@ -20,6 +20,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Word break](src/main/scala/WordBreak.scala)
 - [Word ladder](src/main/scala/WordLadder.scala)
 - [String compression](src/main/scala/StringCompression.scala)
+- [Longest substring of M unique chars](src/main/scala/UniqueCharSubstring.scala)
 
 ## Trees/Graphs
 
