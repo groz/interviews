@@ -51,3 +51,4 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Lisp-like interpreter](src/main/scala/LispLikeInterpreter.scala)
 - [Catalan numbers](src/main/scala/CatalanNumbers.scala)
 - [Longest path](src/main/scala/LongestPath.scala)
+- [Count ways to give change](src/main/scala/CoinChange.scala)
