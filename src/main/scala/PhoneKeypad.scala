@@ -25,7 +25,6 @@ object PhoneKeypad extends App {
     }
 
   // test
-  val ws = words(List(2, 7, 7, 9, 2, 3, 4, 5, 3, 2, 5, 2, 4, 6))
-  println(ws.size)
-  //ws.foreach(println) // add .toSet if uniqueness is required
+  val ws = words(List(2, 7, 9)) // add .toSet if uniqueness is required
+  ws.foreach(println)
 }
