@@ -30,6 +30,8 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Prefix search](src/main/scala/PrefixSearch.scala)
 - [Check validity of BST](src/main/scala/ValidSearchTree.scala)
 - [Shortest path in Graph](src/main/scala/ShortestPathInGraph.scala)
+- [Invert binary tree](src/main/scala/InvertBinaryTree.scala)
+- [Rotate tree](src/main/scala/RotateTree.scala)
 
 ## Arrays/Lists
 
