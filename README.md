@@ -15,12 +15,12 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Longest common subsequence](src/main/scala/LongestCommonSubsequence.scala)
 - [Nearby words](src/main/scala/NearbyWords.scala)
 - [Needle in haystack](src/main/scala/NeedleInHaystack.scala)
-- [Phone keypad](src/main/scala/PhoneKeypad.scala) ([java](src/main/java/PhoneKeypadJava.java))
+- [Phone keypad](src/main/scala/PhoneKeypad.scala) / [java](src/main/java/PhoneKeypadJava.java)
 - [Simple regex matching](src/main/scala/RegexMatching.scala)
 - [Word break](src/main/scala/WordBreak.scala)
 - [Word ladder](src/main/scala/WordLadder.scala)
 - [String compression](src/main/scala/StringCompression.scala)
-- [Longest substring of M unique chars](src/main/scala/UniqueCharSubstring.scala)
+- [Longest substring of M unique chars](src/main/scala/UniqueCharSubstring.scala) / [java](src/main/java/UniqueCharSubstringJava.java)
 
 ## Trees/Graphs
 
@@ -38,7 +38,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
 - [Merge sort](src/main/scala/MergeSort.scala)
 - [Find 2 elements that add to given sum](src/main/scala/TwoSum.scala)
-- [Max subarray sum](src/main/scala/MaxSubarray.scala) ([java](src/main/java/MaxSubarrayJava.java))
+- [Max subarray sum](src/main/scala/MaxSubarray.scala) / [java](src/main/java/MaxSubarrayJava.java)
 
 ## Other
 

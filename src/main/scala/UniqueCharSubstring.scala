@@ -1,8 +1,8 @@
-/*
-Given a string and number M find length of the longest substring of M unique chars.
-Input: abbbcddd, M = 3
-Output: 7 (length of bbbcddd)
-*/
+/**
+  * Given a string and number M find length of the longest substring of M unique chars.
+  * Input: abbbcddd, M = 3
+  * Output: 7 (length of bbbcddd)
+  */
 
 object UniqueCharSubstring extends App {
 
@@ -31,6 +31,7 @@ object UniqueCharSubstring extends App {
   }
 
   // test
+  println( find("abbbcddd", 3) )
   println( find("aabbcccddddee", 3) )
   println( find("aabbcccddddee", 1) )
 }
