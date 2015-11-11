@@ -32,6 +32,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Shortest path in Graph](src/main/scala/ShortestPathInGraph.scala)
 - [Invert binary tree](src/main/scala/InvertBinaryTree.scala)
 - [Rotate tree](src/main/scala/RotateTree.scala)
+- [Dynamic connectivity](src/main/scala/DynamicConnectivity.scala)
 
 ## Arrays/Lists
 
