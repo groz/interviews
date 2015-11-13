@@ -1,5 +1,5 @@
 /**
-Find the first occurence of needle in haystack
+  * Find the first occurrence of needle string in haystack sting
   */
 
 object NeedleInHaystack extends App {

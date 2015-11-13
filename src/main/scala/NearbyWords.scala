@@ -1,6 +1,8 @@
-/*
-Find all nearby words for a given one.
-*/
+/**
+  * Produce all possible words for input sequence of characters given two functions:
+  * nearbyChars(c) -> [c] returns nearby chars for character c
+  * isWord(str) -> checks if string is a word
+  */
 
 object NearbyWords extends App {
 

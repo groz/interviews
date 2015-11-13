@@ -1,6 +1,6 @@
-/*
-Implement prefix search data structure for a given dictionary.
-*/
+/**
+  * Implement prefix search trie for a given dictionary.
+  */
 
 object PrefixSearch extends App {
 

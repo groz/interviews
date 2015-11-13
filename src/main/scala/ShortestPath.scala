@@ -2,7 +2,7 @@
 Find shortest path between given nodes in a graph represented by adjacency list.
 */
 
-object ShortestPathInGraph extends App {
+object ShortestPath extends App {
 
   type Graph[A] = Map[A, Set[A]]
 
