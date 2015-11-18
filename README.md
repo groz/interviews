@@ -9,6 +9,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - FP style is preferable, but not necessary
 
 # Implemented
+\* - stars denote approximate difficulty rating
 
 ## Strings
 
@@ -34,6 +35,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Invert binary tree](src/main/scala/InvertBinaryTree.scala)
 - [Rotate tree](src/main/scala/RotateTree.scala) * 
 - [Dynamic connectivity](src/main/scala/DynamicConnectivity.scala) * 
+- [Islands (java)](src/main/java/Islands.java) \*\*
 
 ## Arrays/Lists
 
