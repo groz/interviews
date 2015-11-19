@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Imagine a matrix of numbers where 0 means water and 1 means land. All adjacent lands form an island.
  * Starting with the m x n space filled with water implement operation
@@ -7,6 +5,8 @@ import java.util.ArrayList;
  * that puts 1 into [row, col] position and returns the new number of islands.
  * Additional reading: https://en.wikipedia.org/wiki/Disjoint-set_data_structure
  */
+
+import java.util.ArrayList;
 
 public class Islands {
     final int LAND = 1;
@@ -35,7 +35,10 @@ public class Islands {
     }
 
     int root(int p) {
-        return (p == id[p]) ? p : root(id[p]);
+        if (p != id[p]) {
+            id[p] = root(id[p]); // path compression
+        }
+        return id[p];
     }
 
     boolean connect(int p, int q) {
