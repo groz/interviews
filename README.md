@@ -45,6 +45,7 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Merge sort](src/main/scala/MergeSort.scala)
 - [Find 2 elements that add to given sum](src/main/scala/TwoSum.scala)
 - [Max subarray sum](src/main/scala/MaxSubarray.scala) / [java](src/main/java/MaxSubarrayJava.java) * 
+- [Max subarray product (java)](src/main/java/MaxSubarrayProduct.java) * 
 
 ## Other
 
