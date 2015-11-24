@@ -11,6 +11,16 @@ Scala is a great language to solve interview problems for software engineer posi
 # Implemented
 \* - stars denote approximate difficulty rating
 
+## Arrays/Lists
+
+- [Maximum product of subarray](src/main/scala/MaxProduct.scala) * 
+- [Pick random k elements](src/main/scala/PickRandom.scala) * 
+- [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
+- [Merge sort](src/main/scala/MergeSort.scala)
+- [Find 2 elements that add to given sum](src/main/scala/TwoSum.scala)
+- [Max subarray sum](src/main/scala/MaxSubarray.scala) / [java](src/main/java/MaxSubarrayJava.java) * 
+- [Max subarray product (java)](src/main/java/MaxSubarrayProduct.java) * 
+
 ## Strings
 
 - [Longest common subsequence](src/main/scala/LongestCommonSubsequence.scala)
@@ -36,16 +46,6 @@ Scala is a great language to solve interview problems for software engineer posi
 - [Rotate tree](src/main/scala/RotateTree.scala) * 
 - [Dynamic connectivity](src/main/scala/DynamicConnectivity.scala) * 
 - [Islands (java)](src/main/java/Islands.java) \*\*
-
-## Arrays/Lists
-
-- [Maximum product of subarray](src/main/scala/MaxProduct.scala) * 
-- [Pick random k elements](src/main/scala/PickRandom.scala) * 
-- [Remove duplicates from sorted list](src/main/scala/SortedListRemoveDuplicates.scala)
-- [Merge sort](src/main/scala/MergeSort.scala)
-- [Find 2 elements that add to given sum](src/main/scala/TwoSum.scala)
-- [Max subarray sum](src/main/scala/MaxSubarray.scala) / [java](src/main/java/MaxSubarrayJava.java) * 
-- [Max subarray product (java)](src/main/java/MaxSubarrayProduct.java) * 
 
 ## Other
 
