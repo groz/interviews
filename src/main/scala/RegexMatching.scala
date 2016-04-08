@@ -31,5 +31,5 @@ object RegexMatching extends App {
   println(isMatch("aa", "a*"))
   println(isMatch("aa", ".*"))
   println(isMatch("ab", ".*"))
-  println(isMatch("dab", "c*a*b*"))
+  println(isMatch("aab", "c*a*b*"))
 }
