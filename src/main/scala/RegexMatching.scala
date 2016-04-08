@@ -17,7 +17,7 @@ object RegexMatching extends App {
     case (Nil, _) => false
     case (c :: chars, '.' :: '*' :: pattern) => isMatch(chars, pattern) || isMatch(chars, ps)
     case (c :: chars, p :: '*' :: pattern) =>
-      (c == p && (isMatch(chars, ps) || isMatch(chars, pattern))) || isMatch(chars, pattern)
+      (c == p && (isMatch(chars, ps) || isMatch(chars, pattern))) || isMatch(cs, pattern)
     case (c :: chars, '.' :: pattern) => isMatch(chars, pattern)
     case (c :: chars, p :: pattern) => c == p && isMatch(chars, pattern)
   }
@@ -31,5 +31,5 @@ object RegexMatching extends App {
   println(isMatch("aa", "a*"))
   println(isMatch("aa", ".*"))
   println(isMatch("ab", ".*"))
-  println(isMatch("aab", "c*a*b*"))
+  println(isMatch("dab", "c*a*b*"))
 }
